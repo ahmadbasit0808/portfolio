@@ -1,5 +1,6 @@
 import { Flex, Box, Heading } from "@chakra-ui/react";
 import { useEffect, useRef } from "react";
+
 const navText = {
   size: {
     base: "sm",
@@ -46,17 +47,19 @@ export default function Navbar() {
         alignItems="center"
         justify={"space-between"}
         paddingY={4}
-        bg={"#2B6CB0"}
+        bgGradient={
+          "linear(to-r, rgba(71, 125, 216, 1), #0fd5c1ff, #0d3c6eff )"
+        }
         color={"#F7FAFC"}
         paddingX="10%"
       >
         <Heading {...navText}>Portfolio</Heading>
         <Flex gap={{ base: "2rem", md: "4rem", lg: "5rem" }}>
           <Heading {...navText}>
-            <a href="#skill-section">Skills</a>
+            <a href="#project-section">Projects</a>
           </Heading>
           <Heading {...navText}>
-            <a href="#project-section">Projects</a>
+            <a href="#skill-section">Skills</a>
           </Heading>
           <Heading {...navText}>Contact</Heading>
         </Flex>

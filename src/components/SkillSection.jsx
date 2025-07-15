@@ -33,9 +33,9 @@ const SkillCard = ({ icon, label, description }) => (
 
 export default function SkillSection() {
   return (
-    <VStack paddingBottom={100} spacing={"40px"} id="skill-section">
-      <Heading>Skills Section</Heading>
-      <Wrap spacing="30px" justify="center" maxW="975px" mx={"auto"}>
+    <VStack paddingBottom={"5rem"} spacing={"40px"} id="skill-section">
+      <Heading>Skills</Heading>
+      <Wrap spacing="45px" justify="center" maxW="1050px" mx={"auto"}>
         <WrapItem>
           <SkillCard
             icon={<SiCplusplus size="6rem" color="#084A86" />}

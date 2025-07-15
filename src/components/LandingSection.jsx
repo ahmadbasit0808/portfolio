@@ -1,7 +1,7 @@
 import { Heading, Avatar, VStack, Box } from "@chakra-ui/react";
 import avatar from "../media/avatar.jpg";
 
-export default function SectionA() {
+export default function LandingSection() {
   return (
     <Box
       paddingY={200}
