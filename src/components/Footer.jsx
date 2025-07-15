@@ -50,8 +50,10 @@ export default function Footer() {
       gap={3}
     >
       <Text whiteSpace={"nowrap"} fontSize={{ base: "sm", md: "lg" }}>
-        Copyright © {new Date().getFullYear()} Muhammad Ahmad Basit. All rights
-        reserved.
+        Copyright © ahmadbasit0808.github.io |
+        {` Since 
+        ${new Date().getFullYear()} `}{" "}
+        | All rights reserved.
       </Text>
 
       <HStack spacing={5}>{Links}</HStack>
