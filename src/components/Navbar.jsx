@@ -55,7 +55,9 @@ export default function Navbar() {
           <Heading {...navText}>
             <a href="#skill-section">Skills</a>
           </Heading>
-          <Heading {...navText}>Projects</Heading>
+          <Heading {...navText}>
+            <a href="#project-section">Projects</a>
+          </Heading>
           <Heading {...navText}>Contact</Heading>
         </Flex>
       </Flex>

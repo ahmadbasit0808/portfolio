@@ -33,7 +33,7 @@ const SkillCard = ({ icon, label, description }) => (
 
 export default function SkillSection() {
   return (
-    <VStack paddingY={100} spacing={"40px"} id="skill-section">
+    <VStack paddingBottom={100} spacing={"40px"} id="skill-section">
       <Heading>Skills Section</Heading>
       <Wrap spacing="30px" justify="center" maxW="975px" mx={"auto"}>
         <WrapItem>
