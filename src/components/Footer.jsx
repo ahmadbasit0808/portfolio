@@ -1,0 +1,58 @@
+import { Flex, Box, Text, HStack } from "@chakra-ui/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+
+const iconWrapperStyles = {
+  size: "xl",
+  transition: "transform 0.3s ease",
+  _hover: {
+    transform: "scale(1.3)",
+  },
+};
+
+const Socials = [
+  { icon: faInstagram, url: "https://www.instagram.com/ahmadbasit0808/" },
+  { icon: faFacebook, url: "https://www.facebook.com/ahmadbasit0808" },
+  {
+    icon: faLinkedin,
+    url: "https://www.linkedin.com/in/muhammad-ahmad-basit-2164b4317/",
+  },
+  { icon: faGithub, url: "https://github.com/ahmadbasit0808" },
+  { icon: faEnvelope, url: "mailto:ahmadbasit0808@gmail.com" },
+];
+
+export default function Footer() {
+  const Links = Socials.map((item) => {
+    return (
+      <Box {...iconWrapperStyles}>
+        <a href={item.url} target="_blank">
+          <FontAwesomeIcon size={"xl"} icon={item.icon} />
+        </a>
+      </Box>
+    );
+  });
+  return (
+    <Flex
+      paddingX={"10%"}
+      paddingY={"4rem"}
+      fontSize={17}
+      bg={"yellow"}
+      flexDirection={"column"}
+      alignItems={"center"}
+      gap={3}
+    >
+      <Text whiteSpace={"nowrap"} fontSize={{ base: "sm", md: "lg" }}>
+        Copyright © {new Date().getFullYear()} Muhammad Ahmad Basit. All rights
+        reserved.
+      </Text>
+
+      <HStack spacing={5}>{Links}</HStack>
+    </Flex>
+  );
+}
