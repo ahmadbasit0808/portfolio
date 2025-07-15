@@ -42,7 +42,8 @@ export default function Footer() {
       paddingX={"10%"}
       paddingY={"4rem"}
       fontSize={17}
-      bg={"yellow"}
+      bg={"#2B6CB0"}
+      color={"#F7FAFC"}
       flexDirection={"column"}
       alignItems={"center"}
       gap={3}

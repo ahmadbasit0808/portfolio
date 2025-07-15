@@ -46,12 +46,15 @@ export default function Navbar() {
         alignItems="center"
         justify={"space-between"}
         paddingY={4}
-        bgColor={"yellow"}
+        bg={"#2B6CB0"}
+        color={"#F7FAFC"}
         paddingX="10%"
       >
         <Heading {...navText}>Portfolio</Heading>
         <Flex gap={{ base: "2rem", md: "4rem", lg: "5rem" }}>
-          <Heading {...navText}>About</Heading>
+          <Heading {...navText}>
+            <a href="#skill-section">Skills</a>
+          </Heading>
           <Heading {...navText}>Projects</Heading>
           <Heading {...navText}>Contact</Heading>
         </Flex>
