@@ -47,16 +47,19 @@ export default function Footer() {
       color={"#F7FAFC"}
       flexDirection={"column"}
       alignItems={"center"}
-      gap={3}
+      gap={1}
     >
       <Text whiteSpace={"nowrap"} fontSize={{ base: "sm", md: "lg" }}>
-        Copyright © ahmadbasit0808.github.io |
+        Copyright © ahmadbasit0808.github.io
+      </Text>
+      <Text whiteSpace={"nowrap"} fontSize={{ base: "sm", md: "lg" }}>
         {` Since 
         ${new Date().getFullYear()} `}{" "}
         | All rights reserved.
       </Text>
-
-      <HStack spacing={5}>{Links}</HStack>
+      <HStack spacing={5} mt={3}>
+        {Links}
+      </HStack>
     </Flex>
   );
 }

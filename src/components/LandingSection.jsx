@@ -14,7 +14,7 @@ export default function LandingSection() {
         <Avatar
           name="Ahmad Basit"
           height={"9rem"}
-          width={"auto"}
+          width={"9rem"}
           marginBottom={3}
           boxShadow="0px 0px 5px black"
           src={avatar}

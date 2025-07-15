@@ -54,7 +54,7 @@ export default function Navbar() {
         paddingX="10%"
       >
         <Heading {...navText}>Portfolio</Heading>
-        <Flex gap={{ base: "2rem", md: "4rem", lg: "5rem" }}>
+        <Flex gap={{ base: "1rem", md: "4rem", lg: "5rem" }}>
           <Heading {...navText}>
             <a href="#project-section">Projects</a>
           </Heading>

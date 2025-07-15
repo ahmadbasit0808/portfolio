@@ -35,7 +35,7 @@ export default function SkillSection() {
   return (
     <VStack paddingBottom={"5rem"} spacing={"40px"} id="skill-section">
       <Heading>Skills</Heading>
-      <Wrap spacing="60px" justify="center" maxW={"900px"} mx={"auto"}>
+      <Wrap spacing="50px" justify="center" maxW={"900px"} mx={"auto"}>
         <WrapItem>
           <SkillCard
             icon={<SiCplusplus size="6rem" color="#084A86" />}
