@@ -44,7 +44,7 @@ const ProjectSlide = ({ title, image, description, link }) => (
       boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
     }}
     transition={{ type: "spring", stiffness: 100 }}
-    marginX={{ base: "7.2rem", sm: "2rem", md: "4.1rem" }}
+    marginX={{ lg: "7.2rem", sm: "2rem", md: "4.1rem" }}
     marginBottom={16}
     paddingY={16}
     paddingX="10%"
