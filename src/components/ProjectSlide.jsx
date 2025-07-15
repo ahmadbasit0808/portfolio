@@ -44,20 +44,20 @@ const ProjectSlide = ({ title, image, description, link }) => (
       boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
     }}
     transition={{ type: "spring", stiffness: 100 }}
-    marginX={16}
+    marginX={{ base: "7.2rem", sm: "2rem", md: "4.1rem" }}
     marginBottom={16}
     paddingY={16}
     paddingX="10%"
-    border="1px solid #E2E8F0" // Light gray border (customizable)
+    border="1px solid #E2E8F0"
     borderRadius="md"
-    boxShadow="base" // Original boxShadow
-    bg="white"
+    boxShadow="base"
+    bgGradient={"linear(to-r, #ffffffff, #e5e2e2ff, #a5a2a2ff )"}
   >
     <Flex
-      direction={{ base: "column", md: "row" }}
+      direction={{ base: "column", lg: "row" }}
       align="center"
       justify="space-between"
-      gap={6}
+      gap={{ base: 6, md: 8, lg: 10 }}
     >
       {/* Left: Text Content */}
       <MotionBox
@@ -83,6 +83,7 @@ const ProjectSlide = ({ title, image, description, link }) => (
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6 }}
+        minW={"320px"}
       >
         <Link href={link} isExternal>
           <Image src={image} alt={"Evowear"} borderRadius="md" />
@@ -93,8 +94,8 @@ const ProjectSlide = ({ title, image, description, link }) => (
 );
 
 const ProjectsSection = () => (
-  <VStack paddingBottom={100} spacing={"40px"} id="project-section">
-    <Heading>Projects Section</Heading>
+  <VStack spacing={"2rem"} paddingBottom={"2rem"} id="project-section">
+    <Heading>Projects</Heading>
     <Box>
       {projects.map((project, index) => (
         <ProjectSlide

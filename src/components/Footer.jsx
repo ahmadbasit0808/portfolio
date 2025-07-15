@@ -37,12 +37,13 @@ export default function Footer() {
       </Box>
     );
   });
+
   return (
     <Flex
       paddingX={"10%"}
       paddingY={"4rem"}
       fontSize={17}
-      bg={"#2B6CB0"}
+      bgGradient={"linear(to-r, rgba(71, 125, 216, 1), #0fd5c1ff, #0d3c6eff )"}
       color={"#F7FAFC"}
       flexDirection={"column"}
       alignItems={"center"}
