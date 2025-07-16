@@ -11,6 +11,7 @@ const navText = {
   transition: "transform 0.3s ease",
   _hover: {
     transform: "scale(1.1)",
+    color: "black",
   },
 };
 
@@ -51,9 +52,11 @@ export default function Navbar() {
           "linear(to-r, rgba(71, 125, 216, 1), #0fd5c1ff, #0d3c6eff )"
         }
         color={"#F7FAFC"}
-        paddingX="10%"
+        paddingX={{ base: "5%", sm: "10%" }}
       >
-        <Heading {...navText}>Portfolio</Heading>
+        <Heading {...navText}>
+          <a href="#landing-section">Portfolio</a>
+        </Heading>
         <Flex gap={{ base: "1rem", md: "4rem", lg: "5rem" }}>
           <Heading {...navText}>
             <a href="#project-section">Projects</a>

@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Evowear from "../media/Evowear.png";
+import Technova from "../media/Technova.png";
+import Codeverse from "../media/Codeverse.png";
 
 const projects = [
   {
@@ -21,17 +23,17 @@ const projects = [
   },
   {
     title: "TechNova",
-    image: Evowear,
+    image: Technova,
     description:
       "TechNova is a React-based dashboard with dynamic charts and animations using Chakra UI and Framer Motion.",
-    link: "https://your-technova-link.com",
+    link: "https://ahmadbasit0808.github.io/evowear/index.html",
   },
   {
     title: "CodeVerse",
-    image: Evowear,
+    image: Codeverse,
     description:
       "An interactive coding blog platform featuring dark mode, scroll-sensitive animations, and custom hooks.",
-    link: "https://your-codeverse-link.com",
+    link: "https://ahmadbasit0808.github.io/evowear/index.html",
   },
 ];
 

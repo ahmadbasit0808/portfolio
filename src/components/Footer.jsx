@@ -1,4 +1,4 @@
-import { Flex, Box, Text, HStack } from "@chakra-ui/react";
+import { Flex, Box, Text, HStack, color } from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -13,6 +13,7 @@ const iconWrapperStyles = {
   transition: "transform 0.3s ease",
   _hover: {
     transform: "scale(1.3)",
+    color: "black",
   },
 };
 

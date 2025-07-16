@@ -17,7 +17,8 @@ const SkillCard = ({ icon, label, description }) => (
     transition={"transform 1s ease"}
     alignItems="center"
     textAlign="center"
-    w="165px"
+    w={{ base: "150px", sm: "165px" }}
+    h={{ base: "263px", sm: "auto" }}
     borderRadius="8"
     boxShadow="0px 0px 1px black"
     padding={4}
@@ -35,7 +36,13 @@ export default function SkillSection() {
   return (
     <VStack paddingBottom={"5rem"} spacing={"40px"} id="skill-section">
       <Heading>Skills</Heading>
-      <Wrap spacing="50px" justify="center" maxW={"900px"} mx={"auto"}>
+      <Wrap
+        spacing={{ base: "18px", sm: "50px" }}
+        justify="center"
+        maxW={"1000px"}
+        mx={"auto"}
+        paddingX={"5%"}
+      >
         <WrapItem>
           <SkillCard
             icon={<SiCplusplus size="6rem" color="#084A86" />}

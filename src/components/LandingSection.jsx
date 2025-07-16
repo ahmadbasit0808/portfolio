@@ -9,6 +9,7 @@ export default function LandingSection() {
       alignItems="center"
       justifyContent="center"
       color={"#2d3748"}
+      id="landing-section"
     >
       <VStack>
         <Avatar
@@ -19,10 +20,18 @@ export default function LandingSection() {
           boxShadow="0px 0px 5px black"
           src={avatar}
         />
-        <Heading fontSize={"sm"}>Hello, I am Muhammad Ahmad Basit!</Heading>
-        <Heading>"A frontend developer</Heading>
-        <Heading>specialized in React</Heading>
-        <Heading>and React Native"</Heading>
+        <Heading fontSize={{ base: "xs", sm: "sm" }}>
+          Hello, I am Muhammad Ahmad Basit!
+        </Heading>
+        <Heading fontSize={{ base: "2xl", sm: "3xl" }}>
+          "A frontend developer
+        </Heading>
+        <Heading fontSize={{ base: "2xl", sm: "3xl" }}>
+          specialized in React
+        </Heading>
+        <Heading fontSize={{ base: "2xl", sm: "3xl" }}>
+          and React Native"
+        </Heading>
       </VStack>
     </Box>
   );
